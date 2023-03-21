@@ -1,0 +1,65 @@
+/* =============== fit */
+@font-face {
+  font-family: 'AsgardFit';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../assets/fonts/Asgard-FitThin.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'AsgardFit';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../assets/fonts/Asgard-FitLight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'AsgardFit';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/Asgard-FitRegular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'AsgardFit';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/Asgard-FitBold.ttf') format('truetype');
+}
+
+/* =============== normal */
+@font-face {
+  font-family: 'Asgard';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../assets/fonts/Asgard-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Asgard';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/fonts/Asgard-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Asgard';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/Asgard-Bold.ttf') format('truetype');
+}
+
+/* =============== normal */
+@font-face {
+  font-family: 'AsgardWide';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../assets/fonts/Asgard-WideLight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'AsgardWide';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/Asgard-WideRegular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'AsgardWide';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/Asgard-WideBold.ttf') format('truetype');
+}

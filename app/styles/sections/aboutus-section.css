@@ -1,0 +1,261 @@
+.aboutus-section {
+  padding-top: 72px;
+}
+.aboutus_container {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.aboutus-highlight-image {
+  position: absolute;
+  left: 0;
+  top: 160px;
+
+  z-index: 0;
+  mix-blend-mode: lighten;
+}
+
+.aboutus__content {
+  margin-top: 192px;
+  width: 1322px;
+
+  /* float: right; */
+}
+.aboutus__description {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 40px;
+
+  color: #ffffff;
+
+  margin-bottom: 45px;
+}
+.aboutus__services {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 62px;
+
+  max-width: 1180px;
+}
+.services__service__item {
+  font-family: 'AsgardWide';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+/* .human-img {
+  margin: 0 auto;
+} */
+.aboutus__human-container {
+  text-align: center;
+  /* display: flex;
+  justify-content: center; */
+}
+.willstar__item__text {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+
+  color: var(--gray);
+
+  width: 223px;
+}
+
+.aboutus__willstar__item {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.two-lines_container,
+.line_container,
+.aboutus__willstar__item {
+  position: absolute;
+}
+
+.two-lines_container {
+  top: 134px;
+  left: 414px;
+}
+
+.line_container {
+  bottom: 426px;
+  left: 510px;
+}
+
+.willstar__item1 {
+  flex-direction: row-reverse;
+
+  top: 60px;
+  left: 58px;
+}
+
+.willstar__item2 {
+  top: 116px;
+  right: 177px;
+}
+
+.willstar__item3 {
+  flex-direction: row-reverse;
+
+  bottom: 366px;
+  left: 140px;
+}
+
+.aboutus_side-letter {
+  transform: rotate(-90deg);
+  /* width: 30px; */
+  /* width: 30px;
+  height: 365px; */
+
+  position: absolute;
+  left: -140px;
+
+  top: 520px;
+}
+
+.aboutus_side-letter_main {
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-family: 'AsgardWide';
+  font-weight: 700;
+  font-size: 157.187px;
+  line-height: 189px;
+
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.aboutus_side-letter_hashtag_container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.advantages__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  top: -214px;
+}
+.advantages__title {
+  font-family: 'AsgardWide';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 108px;
+
+  margin-bottom: 60px;
+  margin-left: 150px;
+}
+.advantages__item_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__item {
+  width: 179px;
+}
+.advantages__item_top {
+  display: flex;
+  position: relative;
+  height: 138px;
+}
+.advantages__item_top_letter {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--pink);
+
+  position: absolute;
+}
+.advantages__item_top_icon {
+  position: relative;
+  z-index: 1;
+}
+
+.advantages__item_bottom {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+
+  width: 179px;
+  color: #ffffff;
+}
+
+.advantages__item1 .advantages__item_top_letter {
+  top: -7px;
+  left: -3px;
+}
+.advantages__item1 > .advantages__item_top {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -5px;
+}
+
+.advantages__item2 .advantages__item_top_letter {
+  top: -16px;
+  right: 8px;
+  text-align: right;
+}
+.advantages__item2 > .advantages__item_top {
+  justify-content: center;
+}
+
+.advantages__item3 .advantages__item_top_letter {
+  bottom: 20px;
+  left: 10px;
+}
+.advantages__item3 > .advantages__item_top {
+  justify-content: center;
+}
+
+.advantages__item4 .advantages__item_top_letter {
+  top: 10px;
+  left: 8px;
+}
+.advantages__item4 > .advantages__item_top {
+  padding-right: 8px;
+  justify-content: flex-end;
+}
+
+.advantages__item5 .advantages__item_top_letter {
+  bottom: 14px;
+  right: -18px;
+  text-align: center;
+}
+.advantages__item5 > .advantages__item_top {
+  padding-left: 16px;
+  justify-content: flex-start;
+}
+
+.advantages__item6 .advantages__item_top_letter {
+  bottom: 26px;
+  right: -2px;
+  text-align: right;
+}
+.advantages__item6 > .advantages__item_top {
+  padding-left: 16px;
+  justify-content: flex-start;
+}
+.advantages__item6 .advantages__item_top_icon {
+  position: relative;
+  top: -6px;
+}

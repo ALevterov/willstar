@@ -1,0 +1,17 @@
+.main_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 30px;
+  gap: 10px;
+
+  font-family: 'Asgard';
+  font-weight: 325;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  border: 1px solid #ffffff;
+}

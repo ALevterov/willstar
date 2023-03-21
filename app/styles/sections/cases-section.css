@@ -1,0 +1,68 @@
+.cases_main__title {
+  margin-bottom: 40px;
+}
+.cases__description {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+
+  color: #ffffff;
+
+  margin-bottom: 112px;
+}
+
+.cases__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 53px;
+}
+
+.slider_description_data {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+
+  align-items: center;
+  margin-bottom: 50px;
+
+  height: 92px;
+}
+
+.slider_description_number {
+  font-family: 'AsgardFit';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 120px;
+
+  /* height: 92px; */
+  max-height: 100%;
+}
+.slider_description_name {
+  font-family: 'AsgardWide';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  max-height: 100%;
+}
+
+.slider_description_logo {
+  align-self: flex-end;
+}
+
+.slider__bottom_text {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+
+  color: #ffffff;
+}
