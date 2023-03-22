@@ -19,7 +19,7 @@
   row-gap: 46px;
 
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 344px);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .services__block {
@@ -32,6 +32,13 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 35px;
+
+  color: #ffffff;
+}
+.services__block_title {
+  font-family: 'AsgardFit';
+  font-style: normal;
+  font-weight: 700;
 
   color: #ffffff;
 }
@@ -57,19 +64,26 @@
 }
 
 .services_block1 > .services__block_title {
-  font-family: 'AsgardFit';
-  font-style: normal;
-  font-weight: 700;
   font-size: 55.0555px;
   line-height: 66px;
-
-  color: #ffffff;
 
   margin-bottom: 27px;
 }
 .services_block1 > .services__block_text {
   margin-bottom: 38px;
 }
+
+.services_block2 > .services__block_title {
+  font-size: 50px;
+  line-height: 60px;
+
+  margin-bottom: 26px;
+}
+.services_block2 > .services__block_text {
+  margin-bottom: 38px;
+  /* max-width: 289px; */
+}
+
 .services_block2 {
   grid-column-start: 3;
   grid-column-end: 4;
