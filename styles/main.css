@@ -8,6 +8,7 @@ font-family: 'Unbounded', cursive; */
 @import url('./components/container.css');
 @import url('./components/buttons.css');
 @import url('./components/header.css');
+@import url('./components/progressBar.css');
 @import url('./sections/first-section.css');
 @import url('./sections/aboutus-section.css');
 @import url('./sections/cases-section.css');
@@ -35,7 +36,9 @@ body {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #fff;
 }
-
+.hidden {
+  display: none;
+}
 .main__title {
   font-family: 'AsgardWide';
   font-style: normal;

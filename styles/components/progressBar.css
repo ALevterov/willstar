@@ -1,0 +1,18 @@
+.progress_bar_item {
+  height: 5px;
+  background-color: transparent;
+  border-radius: 3px;
+
+  transition: background-color 0.6s ease;
+}
+.progress_bar_item.active {
+  background-color: #fff;
+}
+.progress_bar {
+  border-radius: 3px;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.18);
+
+  display: flex;
+  flex-direction: row;
+}

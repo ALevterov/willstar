@@ -1,5 +1,7 @@
 .cases_main__title {
-  margin-bottom: 40px;
+  margin-bottom: -30px;
+  position: relative;
+  top: -24px;
 }
 .cases__description {
   font-family: 'Unbounded';
@@ -18,7 +20,10 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 53px;
 }
-
+.cases__slider_container {
+  /* width: 830px; */
+  overflow: hidden;
+}
 .slider_description_data {
   display: flex;
   justify-content: flex-start;
@@ -27,6 +32,7 @@
   align-items: center;
   margin-bottom: 50px;
 
+  align-content: flex-start;
   height: 92px;
 }
 
@@ -65,4 +71,28 @@
   line-height: 35px;
 
   color: #ffffff;
+}
+
+.cases__progress_bar {
+  position: absolute;
+  bottom: 0;
+  width: 85%;
+}
+
+.carousel__btn {
+  cursor: pointer;
+}
+.carousel__btn > svg > path {
+  transition: all 0.3s ease;
+}
+.carousel__btn:hover > svg > path {
+  fill: transparent !important;
+  stroke: #ffffff !important;
+  stroke-width: 2px !important;
+}
+
+.cases__carousel_btns {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
