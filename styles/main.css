@@ -12,12 +12,20 @@ font-family: 'Unbounded', cursive; */
 @import url('./sections/first-section.css');
 @import url('./sections/aboutus-section.css');
 @import url('./sections/cases-section.css');
+@import url('./sections/residents-section.css');
+@import url('./sections/influence-section.css');
+@import url('./sections/production-section.css');
+@import url('./sections/services-section.css');
 @import url('./owlcarousel/owl.carousel.min.css');
 @import url('./owlcarousel/owl.theme.default.min.css');
 
 html,
 body {
   background-color: var(--bg-color);
+}
+
+* {
+  scroll-behavior: smooth;
 }
 
 .relative {

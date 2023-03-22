@@ -5,13 +5,25 @@
   padding: 30px;
   gap: 10px;
 
-  font-family: 'Asgard';
-  font-weight: 325;
+  font-family: 'AsgardFit';
+  /* font-style: italic; */
+  font-weight: 300;
   font-size: 25px;
   line-height: 30px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 
   color: #ffffff;
 
   border: 1px solid #ffffff;
+
+  transition: all 0.3s ease;
+
+  cursor: pointer;
 }
+/* .main_btn:hover {
+  color: #10141b;
+
+  border: 1px solid #10141b;
+
+  background-color: #ffffff;
+} */

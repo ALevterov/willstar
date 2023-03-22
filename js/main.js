@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // cases carousel ===========
   const casesCarousel = $('.cases-carousel')
   casesCarousel.owlCarousel({
     items: 1,
@@ -43,7 +44,7 @@ $(document).ready(function () {
   let prevIndex = 1
 
   casesCarousel.on('changed.owl.carousel', function (event) {
-    console.log(event)
+    // console.log(event)
     const sliderImageContainer = document.querySelector(
       '.slider_description_logo.cases'
     )
@@ -102,4 +103,109 @@ $(document).ready(function () {
 
     prevIndex = nextIndex
   })
+
+  // influence carousel ===========
+
+  const influenceCarousel = $('.influence-carousel')
+  influenceCarousel.owlCarousel({
+    items: 1,
+    pagination: false,
+    dots: false,
+    loop: true,
+  })
+
+  const influenceProgressBar = document.querySelector(
+    '.influence__progress_bar'
+  )
+
+  const countOfInfluenceCarouselItems = +influenceCarousel[0].dataset.countItems
+
+  const influenceProgessBarItemWidth = 100 / countOfInfluenceCarouselItems + '%'
+
+  let influenceProgressItems = ''
+
+  for (let i = 0; i < countOfInfluenceCarouselItems; i++) {
+    influenceProgressItems += `<div class="progress_bar_item influence__progress_bar_item influence__progress_bar_item${
+      i + 1
+    } ${
+      i === 0 ? 'active' : ''
+    }" style="width: ${influenceProgessBarItemWidth}"></div>`
+  }
+
+  influenceProgressBar.insertAdjacentHTML('afterbegin', influenceProgressItems)
+
+  const nextBtnInfluence = $('.influence__carousel_btn_next')
+  const prevBtnInfluence = $('.influence__carousel_btn_prev')
+
+  let actionInfluence
+
+  nextBtnInfluence.click(function () {
+    actionInfluence = 'next'
+    influenceCarousel.trigger('next.owl.carousel', [600])
+  })
+
+  prevBtnInfluence.click(function () {
+    actionInfluence = 'prev'
+    influenceCarousel.trigger('prev.owl.carousel', [600])
+  })
+
+  let prevIndexInfluence = 1
+
+  influenceCarousel.trigger('refresh.owl.carousel')
+
+  influenceCarousel.on('changed.owl.carousel', function (event) {
+    let nextIndexInfluence = 1
+    // console.log(event)
+
+    const prevObj = {
+      1: 3,
+      3: 2,
+      2: 1,
+    }
+    const nextObj = {
+      3: 2,
+      4: 3,
+      2: 1,
+    }
+    if (actionInfluence === 'next') {
+      nextIndexInfluence = nextObj[event.item.index]
+    }
+    if (actionInfluence === 'prev') {
+      nextIndexInfluence = prevObj[event.item.index]
+    }
+    const prevInfluenceProgressItem = document.querySelector(
+      `.influence__progress_bar_item${prevIndexInfluence}`
+    )
+    const nextInfluenceProgressItem = document.querySelector(
+      `.influence__progress_bar_item${nextIndexInfluence}`
+    )
+
+    prevInfluenceProgressItem.classList.remove('active')
+    nextInfluenceProgressItem.classList.add('active')
+
+    const influenceIndexElem = document
+      .querySelector('.slider_description_number.influence')
+      .querySelector('.bordered')
+
+    influenceIndexElem.innerHTML = '#' + nextIndexInfluence
+
+    const influenceSliderData = document.querySelector(
+      `.influence-slider-data${nextIndexInfluence}`
+    ).dataset
+    const { text } = influenceSliderData
+    const influenceDescriptionalText = document.querySelector(
+      '.slider_description_name.influence'
+    )
+    influenceDescriptionalText.innerHTML = text
+    prevIndexInfluence = nextIndexInfluence
+  })
+})
+
+const residentsBtn = document.querySelector('.residents_btn')
+const residentsCardsContainer = document.querySelector(
+  '.residents__cards_container'
+)
+
+residentsBtn.addEventListener('click', () => {
+  residentsCardsContainer.classList.toggle('opened')
 })

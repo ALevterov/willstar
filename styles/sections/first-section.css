@@ -20,32 +20,27 @@
   right: 0;
   top: 200px;
 }
-.hash-tags-container {
+/* .hash-tags-container {
   width: 30px;
   height: 365px;
-  /* margin-bottom: 10px; */
   position: relative;
 
   margin-top: 49px;
   margin-bottom: 10px;
 
   margin-left: -15px;
-}
+} */
 .hash-tags {
-  /* display: flex; */
-  /* gap: 8px; */
-
-  /* margin-bottom: 10px; */
-  /* width: 30px;
-  height: 365px; */
-  /* height: 365px; */
-  position: absolute;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  margin: 32px 0;
+  /* position: absolute;
   top: calc(50% - 15px);
-  left: calc(-365px / 2 + 15px);
-  width: 365px;
+  left: calc(-365px / 2 + 15px); */
+  /* width: 365px;
   transform: rotate(-90deg);
 
-  flex-direction: column;
+  flex-direction: column; */
 }
 .hash-tags__item {
   font-family: 'Oswald';

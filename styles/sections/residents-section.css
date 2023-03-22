@@ -1,0 +1,102 @@
+.residents-section {
+  margin-bottom: 250px;
+}
+.residents.main__title {
+  margin-bottom: 39px;
+}
+
+.residents__cards_container {
+  display: flex;
+  justify-content: center;
+  gap: 61px;
+
+  margin-bottom: 110px;
+
+  height: 436px;
+
+  flex-wrap: wrap;
+
+  overflow: hidden;
+}
+.residents__cards_container.opened {
+  height: auto;
+}
+.residents__card {
+  width: 287px;
+}
+
+.residents__card_image {
+  margin-bottom: 22px;
+}
+
+.residents__card_name {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 31px;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.residents_card_social {
+  display: flex;
+  gap: 25px;
+
+  justify-content: center;
+}
+
+.residents_card_social_item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 53px;
+}
+/* .residents_social_icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+} */
+.residents_social_subs {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.residents_social_icon {
+  margin-bottom: 3px;
+}
+
+.residents__card_bordered.bordered {
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+}
+
+.residents__btn_container {
+  display: flex;
+  justify-content: center;
+}
+
+.residents_btn {
+  text-transform: lowercase;
+}
+
+.slider_description_name.influence {
+  max-width: 974px;
+}
+
+.residents_fire {
+  position: absolute;
+  right: 0;
+  top: -190px;
+}

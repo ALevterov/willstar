@@ -1,3 +1,6 @@
+.cases-section {
+  margin-bottom: 250px;
+}
 .cases_main__title {
   margin-bottom: -30px;
   position: relative;
@@ -76,7 +79,7 @@
 .cases__progress_bar {
   position: absolute;
   bottom: 0;
-  width: 85%;
+  /* width: 634px; */
 }
 
 .carousel__btn {
@@ -91,7 +94,7 @@
   stroke-width: 2px !important;
 }
 
-.cases__carousel_btns {
+.carousel_btns {
   position: absolute;
   right: 0;
   bottom: 0;

@@ -1,11 +1,16 @@
 .aboutus-section {
   padding-top: 72px;
+  display: flex;
 }
 .aboutus_container {
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+.aboutus__wrapper {
+  display: flex;
+  gap: 181px;
 }
 .aboutus-highlight-image {
   position: absolute;
@@ -113,18 +118,18 @@
 }
 
 .aboutus_side-letter {
-  transform: rotate(-90deg);
-  /* width: 30px; */
-  /* width: 30px;
-  height: 365px; */
+  display: flex;
 
-  position: absolute;
-  left: -140px;
-
-  top: 520px;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  padding-bottom: 207px;
+  /* padding-right: 80px; */
 }
 
 .aboutus_side-letter_main {
+  writing-mode: vertical-lr;
   text-transform: uppercase;
   white-space: nowrap;
   font-family: 'AsgardWide';
@@ -137,9 +142,10 @@
   color: #ffffff;
 }
 .aboutus_side-letter_hashtag_container {
-  display: flex;
+  writing-mode: vertical-lr;
+  /* display: flex;
   justify-content: flex-end;
-  gap: 8px;
+  gap: 8px; */
 }
 
 .advantages__container {

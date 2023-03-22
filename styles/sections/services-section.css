@@ -1,0 +1,134 @@
+.services-section {
+  z-index: 1;
+}
+.container.services {
+  display: flex;
+}
+.main__title.services {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+
+  text-align: right;
+}
+
+.services__blocks_container {
+  flex-grow: 1;
+  display: grid;
+  column-gap: 38px;
+  row-gap: 46px;
+
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 344px);
+}
+
+.services__block {
+  border: 1px solid #ffffff;
+}
+.services_block1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  background: radial-gradient(
+    57.37% 113.95% at 67.55% 87.06%,
+    #b8b5ff 0%,
+    rgba(184, 181, 255, 0.461968) 54.25%,
+    rgba(184, 181, 255, 0) 100%
+  );
+  mix-blend-mode: color-dodge;
+  border: 1px solid #ffffff;
+}
+.services_block2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  background: radial-gradient(
+      106.65% 110.32% at 23.1% -15.26%,
+      #f5b5ff 0%,
+      rgba(245, 181, 255, 0.501571) 32.17%,
+      rgba(245, 181, 255, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  mix-blend-mode: color-dodge;
+}
+.services_block3 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  background: linear-gradient(
+    0deg,
+    #b5ffdb -11.38%,
+    rgba(181, 255, 228, 0.45) 11.95%,
+    rgba(181, 255, 215, 0) 85.9%
+  );
+  mix-blend-mode: color-dodge;
+}
+
+.services_block4 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  background: radial-gradient(
+      110.05% 125.41% at 106.52% 105.96%,
+      #ffe1b5 0%,
+      rgba(255, 225, 181, 0.501571) 32.17%,
+      rgba(255, 225, 181, 0.178834) 65.31%,
+      rgba(255, 225, 181, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  mix-blend-mode: color-dodge;
+}
+.services_block5 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  background: radial-gradient(
+      79.54% 157.99% at 72% -23.69%,
+      #ecffb5 0%,
+      rgba(236, 255, 181, 0.461968) 56.87%,
+      rgba(236, 255, 181, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  mix-blend-mode: color-dodge;
+}
+.services_block6 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+  background: radial-gradient(
+      66.59% 132.27% at 40.29% -11.19%,
+      #b8b5ff 0%,
+      rgba(184, 181, 255, 0.461968) 54.25%,
+      rgba(184, 181, 255, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  mix-blend-mode: color-dodge;
+  border: 1px solid #ffffff;
+}
+.services_block7 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+  background: radial-gradient(
+      110.05% 125.41% at 106.52% 105.96%,
+      #ffe1b5 0%,
+      rgba(255, 225, 181, 0.501571) 32.17%,
+      rgba(255, 225, 181, 0.178834) 65.31%,
+      rgba(255, 225, 181, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  mix-blend-mode: color-dodge;
+}
