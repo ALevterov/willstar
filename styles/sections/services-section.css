@@ -5,6 +5,7 @@
   display: flex;
 }
 .main__title.services {
+  font-family: 'AsgardFit';
   writing-mode: vertical-lr;
   transform: rotate(180deg);
 
@@ -17,12 +18,22 @@
   column-gap: 38px;
   row-gap: 46px;
 
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 344px);
 }
 
 .services__block {
   border: 1px solid #ffffff;
+  transition: all 0.6s ease;
+}
+.services__block_text {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+
+  color: #ffffff;
 }
 .services_block1 {
   grid-column-start: 1;
@@ -30,7 +41,7 @@
   grid-row-start: 1;
   grid-row-end: 2;
 
-  background: radial-gradient(
+  background-image: radial-gradient(
     57.37% 113.95% at 67.55% 87.06%,
     #3543e9 0%,
     rgba(53, 67, 233, 0.461968) 54.25%,
@@ -38,6 +49,26 @@
   );
   mix-blend-mode: color-dodge;
   border: 1px solid #ffffff;
+
+  padding: 41px 14px 36px 46px;
+}
+.services_block1:hover {
+  background: #3543e9;
+}
+
+.services_block1 > .services__block_title {
+  font-family: 'AsgardFit';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55.0555px;
+  line-height: 66px;
+
+  color: #ffffff;
+
+  margin-bottom: 27px;
+}
+.services_block1 > .services__block_text {
+  margin-bottom: 38px;
 }
 .services_block2 {
   grid-column-start: 3;
@@ -53,6 +84,8 @@
     )
     /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   mix-blend-mode: color-dodge;
+
+  padding: 35px 37px 36px 39px;
 }
 .services_block3 {
   grid-column-start: 4;
@@ -67,6 +100,8 @@
     rgba(181, 255, 215, 0) 85.9%
   );
   mix-blend-mode: color-dodge;
+
+  padding: 36px 14px 55px 29px;
 }
 
 .services_block4 {
@@ -84,6 +119,8 @@
     )
     /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   mix-blend-mode: color-dodge;
+
+  padding: 35px 39px 36px 40px;
 }
 .services_block5 {
   grid-column-start: 2;
@@ -99,6 +136,8 @@
     )
     /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   mix-blend-mode: color-dodge;
+
+  padding: 35px 91px 26px 40px;
 }
 .services_block6 {
   grid-column-start: 1;
@@ -115,6 +154,8 @@
     /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   mix-blend-mode: color-dodge;
   border: 1px solid #ffffff;
+
+  padding: 41px 31px 36px 46px;
 }
 .services_block7 {
   grid-column-start: 4;
@@ -131,4 +172,6 @@
     )
     /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   mix-blend-mode: color-dodge;
+
+  padding: 35px 5px 36px 41px;
 }

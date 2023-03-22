@@ -20,6 +20,22 @@
 
   cursor: pointer;
 }
+.order_btn {
+  font-family: 'AsgardFit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  color: #ffffff;
+
+  border: none;
+
+  display: flex;
+  align-items: center;
+}
+.order_btn > svg {
+  margin-left: 12px;
+}
 /* .main_btn:hover {
   color: #10141b;
 
