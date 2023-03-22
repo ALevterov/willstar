@@ -32,8 +32,8 @@
 
   background: radial-gradient(
     57.37% 113.95% at 67.55% 87.06%,
-    #b8b5ff 0%,
-    rgba(184, 181, 255, 0.461968) 54.25%,
+    #3543e9 0%,
+    rgba(53, 67, 233, 0.461968) 54.25%,
     rgba(184, 181, 255, 0) 100%
   );
   mix-blend-mode: color-dodge;
