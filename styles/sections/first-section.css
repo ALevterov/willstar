@@ -34,13 +34,22 @@
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   margin: 32px 0;
-  /* position: absolute;
-  top: calc(50% - 15px);
-  left: calc(-365px / 2 + 15px); */
-  /* width: 365px;
-  transform: rotate(-90deg);
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 30px;
+  white-space: nowrap;
+  color: #ffffff;
 
-  flex-direction: column; */
+  height: 386px; /*  optional */
+  overflow: hidden;
+}
+.hast-tags-inner {
+  animation-name: marquee;
+  animation-timing-function: linear;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 .hash-tags__item {
   font-family: 'Oswald';
@@ -48,8 +57,6 @@
   font-weight: 200;
   font-size: 20px;
   line-height: 30px;
-  /* transform: rotate(-90deg); */
-
   white-space: nowrap;
   color: #ffffff;
 }
@@ -112,4 +119,13 @@
 
 .sound-controller__icon {
   cursor: pointer;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
 }

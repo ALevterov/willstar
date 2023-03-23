@@ -143,6 +143,18 @@
 }
 .aboutus_side-letter_hashtag_container {
   writing-mode: vertical-lr;
+
+  margin: 32px 0;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 30px;
+  white-space: nowrap;
+  color: #ffffff;
+
+  overflow: hidden;
+  height: 386px;
   /* display: flex;
   justify-content: flex-end;
   gap: 8px; */
@@ -264,4 +276,46 @@
 .advantages__item6 .advantages__item_top_icon {
   position: relative;
   top: -6px;
+}
+.running_string {
+  display: inline-block;
+  height: 160px;
+  transform: translateY(30px);
+  overflow: hidden;
+}
+.running_string_inner {
+  transform: translateY(0%);
+}
+.running_string_inner.animated1 {
+  animation-name: running_string1;
+  animation-duration: 0.6s;
+  animation-timing-function: linear;
+}
+.running_string_inner.animated2 {
+  animation-name: running_string2;
+  animation-duration: 0.6s;
+  animation-timing-function: linear;
+}
+.running_string_inner_item {
+  height: 160px;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes running_string1 {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes running_string2 {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
