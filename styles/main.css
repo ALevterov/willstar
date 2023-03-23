@@ -26,7 +26,7 @@ body {
   background-color: var(--bg-color);
 }
 section {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 * {
   scroll-behavior: smooth;

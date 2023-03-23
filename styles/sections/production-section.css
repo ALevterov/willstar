@@ -1,5 +1,7 @@
 .production-section {
   padding-bottom: 327px;
+
+  /* overflow: hidden; */
 }
 .container.production {
   /* padding-left: 23px; */
@@ -24,7 +26,8 @@
 
 .production__hightlight {
   mix-blend-mode: lighten;
-  right: -85px;
+  /* right: -85px; */
+  right: 0;
   top: -255px;
 }
 .production__background {
@@ -40,6 +43,8 @@
   justify-content: space-between;
 
   z-index: 4;
+
+  padding-right: 75px;
 }
 
 .main_btn.production {
