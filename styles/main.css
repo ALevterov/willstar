@@ -16,6 +16,8 @@ font-family: 'Unbounded', cursive; */
 @import url('./sections/influence-section.css');
 @import url('./sections/production-section.css');
 @import url('./sections/services-section.css');
+@import url('./sections/contact-section.css');
+@import url('./sections/footer.css');
 @import url('./owlcarousel/owl.carousel.min.css');
 @import url('./owlcarousel/owl.theme.default.min.css');
 
@@ -23,7 +25,9 @@ html,
 body {
   background-color: var(--bg-color);
 }
-
+section {
+  overflow: hidden;
+}
 * {
   scroll-behavior: smooth;
 }
