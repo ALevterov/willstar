@@ -1,0 +1,138 @@
+.section_residents_page {
+  padding-top: 72px;
+  margin-bottom: 178px;
+}
+.section__residents_fire {
+  position: absolute;
+  right: 0;
+  top: -230px;
+}
+
+.section__residents_bg {
+  position: absolute;
+  top: 0;
+}
+
+.residents_getback {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 61px;
+  margin-bottom: 41px;
+}
+
+.residents_getback_items {
+  align-items: flex-end;
+  display: flex;
+  gap: 23px;
+}
+.residents_getback_label {
+  font-family: 'Asgard';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+
+.resident__container {
+  display: flex;
+  gap: 160px;
+  /* width: 100%; */
+}
+.resident__container_photo > img {
+  min-width: 544px;
+  height: 542px;
+}
+.resident__container_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 47px;
+}
+
+.resident__container_right {
+  flex-grow: 1;
+
+  position: relative;
+  top: -7px;
+}
+.resident__age {
+  font-family: 'AsgardWide';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+
+  letter-spacing: 0.09em;
+
+  color: #ffffff;
+
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+}
+.resident__title {
+  font-family: 'AsgardWide';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 60px;
+
+  letter-spacing: 0.065em;
+
+  color: #ffffff;
+
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+}
+
+.resident__container_text {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+
+  color: #ffffff;
+
+  margin-bottom: 47px;
+}
+
+.resident__container_social {
+  display: flex;
+  gap: 50px;
+  justify-content: flex-start;
+
+  margin-bottom: 57px;
+}
+
+.resident__container_social_item {
+  display: flex;
+  gap: 12px;
+
+  align-items: center;
+}
+
+.resident__container_social_item_subs {
+  font-family: 'AsgardFit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.resident__caption {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+
+  color: #585858;
+}

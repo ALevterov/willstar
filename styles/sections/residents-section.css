@@ -23,6 +23,7 @@
 }
 .residents__card {
   width: 287px;
+  display: block;
 }
 
 .residents__card_image {

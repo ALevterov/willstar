@@ -20,45 +20,4 @@ font-family: 'Unbounded', cursive; */
 @import url('./sections/footer.css');
 @import url('./owlcarousel/owl.carousel.min.css');
 @import url('./owlcarousel/owl.theme.default.min.css');
-
-html,
-body {
-  background-color: var(--bg-color);
-}
-section {
-  /* overflow: hidden; */
-}
-* {
-  scroll-behavior: smooth;
-}
-
-.relative {
-  position: relative;
-}
-.divider_vertical {
-  height: 51px;
-  width: 2px;
-
-  background-color: #fff;
-}
-.bordered {
-  color: transparent;
-
-  -webkit-text-stroke: 2px;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #fff;
-}
-.hidden {
-  display: none;
-}
-.main__title {
-  font-family: 'AsgardWide';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 157.187px;
-  line-height: 189px;
-
-  color: #ffffff;
-
-  text-transform: uppercase;
-}
+@import url('common.css');
