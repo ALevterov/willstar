@@ -1,0 +1,22 @@
+.production-cases-section {
+  margin-bottom: 200px;
+}
+.main__title.production_cases {
+  font-family: 'AsgardFit';
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+
+  text-align: right;
+}
+.container.production_cases {
+  display: flex;
+}
+
+.production_contact_fire {
+  position: absolute;
+  right: 0;
+
+  top: -190px;
+
+  mix-blend-mode: lighten;
+}

@@ -1,0 +1,40 @@
+@import url('./production-cases-section.css');
+.first-section.production {
+  padding-top: 70px;
+
+  margin-bottom: 186px;
+}
+.production_bg {
+  position: absolute;
+  top: 0;
+
+  width: 2057px;
+  height: 1211px;
+}
+.production__additional_text {
+  font-family: 'AsgardFit';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 100px;
+  line-height: 120px;
+
+  letter-spacing: 0.36em;
+
+  color: #ffffff;
+
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+}
+
+.main-text.production {
+  margin-bottom: -14px;
+}
+
+.production__additional_text {
+  margin-bottom: 92px;
+}
+
+.hash-tags.production {
+  margin-bottom: 0;
+}
