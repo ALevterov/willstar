@@ -1,8 +1,40 @@
 .container {
   width: 100%;
   max-width: 1680px;
+  /* margin-left: 120px;
+  margin-right: 120px; */
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 1800px) {
+  .container {
+    max-width: 1560px;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .container {
+    max-width: 1500px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .container {
+    max-width: 1416px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .container {
+    max-width: 1316px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    max-width: 1256px;
+  }
 }
 
 @media screen and (max-width: 1440px) {

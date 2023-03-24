@@ -5,6 +5,10 @@
   margin-bottom: -30px;
   position: relative;
   top: -24px;
+
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
 }
 .cases__description {
   font-family: 'Unbounded';

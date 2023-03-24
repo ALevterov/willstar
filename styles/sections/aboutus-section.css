@@ -23,9 +23,6 @@
 
 .aboutus__content {
   margin-top: 192px;
-  width: 1322px;
-
-  /* float: right; */
 }
 .aboutus__description {
   font-family: 'Unbounded';
@@ -82,39 +79,30 @@
   align-items: flex-start;
 }
 
-.two-lines_container,
-.line_container,
-.aboutus__willstar__item {
-  position: absolute;
-}
-
 .two-lines_container {
-  top: 134px;
-  left: 414px;
+  position: relative;
+  top: 70px;
+  left: 4px;
 }
-
-.line_container {
-  bottom: 426px;
-  left: 510px;
-}
-
-.willstar__item1 {
-  flex-direction: row-reverse;
+.aboutus__willstar___items_top {
+  position: absolute;
 
   top: 60px;
-  left: 58px;
+  right: 14.6%;
+  display: flex;
+}
+.willstar__item1 {
+  flex-direction: row-reverse;
 }
 
 .willstar__item2 {
-  top: 116px;
-  right: 177px;
+  position: relative;
+  right: -14px;
+  top: 50px;
 }
 
 .willstar__item3 {
   flex-direction: row-reverse;
-
-  bottom: 366px;
-  left: 140px;
 }
 
 .aboutus_side-letter {
@@ -289,4 +277,38 @@
 .advantages__item6 .advantages__item_top_icon {
   position: relative;
   top: -6px;
+}
+.aboutus__willstar___items_bottom {
+  position: absolute;
+  bottom: 366px;
+  right: 645px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.line_container {
+  position: relative;
+  top: -30px;
+  right: -20.5px;
+}
+.willstar__item3 {
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 1800px) {
+  .aboutus__willstar___items_top {
+    right: 10.5%;
+  }
+  .aboutus__willstar___items_bottom {
+    right: 585px;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .aboutus__wrapper {
+    gap: 100px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .aboutus__wrapper {
+    gap: 60px;
+  }
 }

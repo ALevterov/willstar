@@ -2,9 +2,9 @@
   margin-bottom: 200px;
 }
 .main__title.production_cases {
-  font-family: 'AsgardFit';
+  font-family: 'AsgardWide';
   writing-mode: vertical-lr;
-  transform: rotate(180deg);
+  transform: rotate(180deg) translateY(20px);
 
   text-align: right;
 }
