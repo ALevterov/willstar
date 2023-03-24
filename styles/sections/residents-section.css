@@ -1,6 +1,10 @@
 .residents-section {
   margin-bottom: 250px;
 }
+.container.residents {
+  z-index: 9;
+  position: relative;
+}
 .residents.main__title {
   margin-bottom: 39px;
 }
@@ -31,7 +35,7 @@
 }
 
 .residents__card_name {
-  font-family: 'Unbounded';
+  font-family: 'AsgardFit';
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -100,4 +104,29 @@
   position: absolute;
   right: 0;
   top: -190px;
+}
+
+@media screen and (max-width: 1600px) {
+  .residents__card_name {
+    font-size: 19.066px;
+    line-height: 24px;
+  }
+  .residents_social_subs {
+    font-size: 11.4396px;
+    line-height: 17px;
+  }
+  .residents_social_icon > svg {
+    width: 14px;
+    height: 14px;
+  }
+  .residents__card img,
+  .residents__card {
+    width: 218px;
+  }
+  .residents__cards_container {
+    height: 345px;
+    gap: 46px;
+
+    margin-bottom: 66px;
+  }
 }

@@ -31,3 +31,23 @@
   display: flex;
   align-items: center;
 }
+
+@media screen and (max-width: 1440px) {
+  .header__menu__list {
+    gap: 59px;
+  }
+  .header__menu__item {
+    font-size: 13.4723px;
+    line-height: 20px;
+  }
+  .header__social {
+    gap: 37.78px;
+  }
+  .container .hash-tags {
+    font-size: 14.9692px;
+    line-height: 22px;
+
+    margin-top: 96px;
+    margin-bottom: 110px;
+  }
+}

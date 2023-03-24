@@ -34,7 +34,7 @@
   /* transform: matrix(-1, 0, 0, 1, 0, 0); */
 
   top: -170px;
-  right: 110px;
+  right: 5.78034%;
 
   /* z-index: 5; */
 }
@@ -53,4 +53,10 @@
   /* justify-self: flex-end; */
   align-self: flex-end;
   /* margin-right: 49px; */
+}
+
+@media screen and (max-width: 1700px) {
+  .production__background {
+    right: 0;
+  }
 }

@@ -42,3 +42,13 @@ section {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #fff;
 }
+
+@media screen and (max-width: 1600px) {
+  .main__title {
+    font-size: 119.878px;
+    line-height: 144px;
+
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-width: 1px;
+  }
+}

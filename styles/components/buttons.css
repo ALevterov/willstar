@@ -36,10 +36,10 @@
 .order_btn > svg {
   margin-left: 12px;
 }
-/* .main_btn:hover {
-  color: #10141b;
-
-  border: 1px solid #10141b;
-
-  background-color: #ffffff;
-} */
+@media screen and (max-width: 1600px) {
+  .main_btn {
+    font-size: 18.7115px;
+    line-height: 22px;
+    padding: 22.5px;
+  }
+}
