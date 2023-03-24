@@ -1,4 +1,5 @@
-@import url('./production-cases-section.css');
+@import url('production-cases-section.css');
+@import url('galery.css');
 .first-section.production {
   padding-top: 70px;
 

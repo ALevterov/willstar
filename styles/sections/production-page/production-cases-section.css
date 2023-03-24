@@ -20,3 +20,11 @@
 
   mix-blend-mode: lighten;
 }
+.container.production_cases {
+  display: flex;
+  gap: 36px;
+}
+
+.production__galery_container {
+  flex-grow: 1;
+}
