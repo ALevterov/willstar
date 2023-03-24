@@ -32,7 +32,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1600px) {
   .header__menu__list {
     gap: 59px;
   }
