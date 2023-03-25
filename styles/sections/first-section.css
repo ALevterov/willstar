@@ -4,7 +4,9 @@
 }
 .iphone-left,
 .iphone-middle,
-.iphone-right {
+.iphone-right,
+.iphone-left1600,
+.iphone-middle1600 {
   position: absolute;
   z-index: 0;
 }
@@ -149,7 +151,14 @@
   display: flex;
   align-items: center;
 }
-
+.iphone-left img,
+.iphone-middle img,
+.iphone-right img,
+.iphone-left1600 img,
+.iphone-middle1600 img {
+  width: 100%;
+  height: 100%;
+}
 @keyframes running_string1 {
   0% {
     transform: translateY(0%);
@@ -176,8 +185,55 @@
     transform: translateY(100%);
   }
 }
+.iphone-left1600 {
+  display: none;
+}
+.iphone-middle1600 {
+  display: none;
+}
+@media screen and (max-width: 1850px) {
+  .iphone-left {
+    width: 480px;
+  }
+
+  .iphone-middle {
+    width: 480px;
+  }
+
+  .iphone-right {
+    height: 480px;
+  }
+}
 
 @media screen and (max-width: 1600px) {
+  .iphone-left1600 {
+    top: 0;
+    display: block;
+    left: 156px;
+  }
+  .iphone-middle1600 {
+    display: block;
+    left: calc(50% - 100px);
+    bottom: 0;
+  }
+
+  .iphone-left {
+    width: 418px;
+    height: 512px;
+    display: none;
+  }
+
+  .iphone-middle {
+    width: 418px;
+    height: 820px;
+    left: calc(50% - 85px);
+    display: none;
+  }
+
+  .iphone-right {
+    height: 418px;
+  }
+
   .first-section {
     padding-top: 60px;
   }
@@ -208,5 +264,27 @@
   .sound-controller__icon > svg {
     width: 29px;
     height: 22px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  /* .iphone-left {
+    width: 340px;
+    left: 206px;
+    height: auto;
+  }
+
+  .iphone-middle {
+    width: 340px;
+    height: auto;
+  } */
+  .iphone-left1600 {
+    width: 340px;
+  }
+  .iphone-middle1600 {
+    width: 340px;
+  }
+  .iphone-right {
+    height: 340px;
   }
 }
