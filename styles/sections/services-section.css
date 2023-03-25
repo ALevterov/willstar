@@ -348,3 +348,9 @@
     line-height: 50px;
   }
 }
+
+@media screen and (max-width: 1600px) {
+  .services-section {
+    margin-bottom: 105px;
+  }
+}

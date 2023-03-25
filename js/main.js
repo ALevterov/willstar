@@ -206,6 +206,7 @@ const residentsCardsContainer = document.querySelector(
   '.residents__cards_container'
 )
 
+let residentsTitle = document.querySelector('#residents')
 residentsBtn.addEventListener('click', () => {
   residentsCardsContainer.classList.toggle('opened')
 })
@@ -351,7 +352,7 @@ let header = `<header class="header" id="header-sticky">
 </div>
 </header>`
 
-let firstSection = document.getElementById('section-first')
+let firstSection = document.querySelector('.first-section.fixed')
 let headerElem = document.getElementById('header')
 let aboutusContainer = document.querySelector('.aboutus_container')
 
@@ -370,16 +371,14 @@ let headerOffset = window.innerWidth < 1600 ? 60 : 72
 
 window.addEventListener('scroll', e => {
   if (
-    window.scrollY >
-      firstSection.scrollHeight + headerElem.scrollHeight - headerOffset &&
+    window.scrollY > firstSection.scrollHeight + headerElem.scrollHeight &&
     !withHeader
   ) {
     aboutusContainer.insertAdjacentHTML('afterbegin', header)
     withHeader = true
   }
   if (
-    window.scrollY <
-      firstSection.scrollHeight + headerElem.scrollHeight - headerOffset &&
+    window.scrollY < firstSection.scrollHeight + headerElem.scrollHeight &&
     withHeader
   ) {
     document.getElementById('header-sticky').remove()
@@ -415,7 +414,6 @@ let submitBtn = document.getElementById('submit')
 submitBtn.disabled = true
 
 function validateForm() {
-  console.log('validateForm')
   if (nameInput.value === '' || emailInput.value === '') {
     submitBtn.disabled = true
   }

@@ -102,6 +102,9 @@
   .contact__wrapper {
     gap: 47px;
   }
+  .contact-section {
+    padding: 0 0 0 7px;
+  }
 }
 @media screen and (max-width: 1700px) {
   .main__title.contact {
@@ -136,5 +139,10 @@
   }
   .form__footer {
     gap: 80px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .contact-section {
+    margin-bottom: 230px;
   }
 }

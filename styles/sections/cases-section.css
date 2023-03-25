@@ -30,6 +30,9 @@
 .cases__slider_container {
   /* width: 830px; */
   overflow: hidden;
+
+  display: flex;
+  align-items: flex-end;
 }
 .slider_description_data {
   display: flex;
@@ -112,6 +115,10 @@
   margin-bottom: 33px;
 }
 @media screen and (max-width: 1600px) {
+  .cases-section,
+  .residents-section {
+    margin-bottom: 191px;
+  }
   .progress_bar {
     width: 484px;
   }

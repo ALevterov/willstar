@@ -39,3 +39,39 @@
 .hash-tags.production {
   margin-bottom: 0;
 }
+
+.contact-section.production {
+  z-index: 3;
+}
+
+@media screen and (max-width: 1600px) {
+  .main-text.production {
+    margin-top: -45px;
+    margin-bottom: -24px;
+  }
+  .production__additional_text {
+    font-size: 75.3915px;
+    line-height: 90px;
+
+    margin-bottom: 69px;
+  }
+  .hash-tags.production {
+    margin-top: 19px;
+    margin-bottom: 0;
+  }
+  .first-section.production {
+    padding-top: 60px;
+    margin-bottom: 140px;
+  }
+  .production_bg {
+    width: 100%;
+    height: 1000px;
+    /* height: 1100px; */
+  }
+  .production-cases-section {
+    margin-bottom: 150px;
+  }
+  .contact-section.production {
+    margin-bottom: 261px;
+  }
+}
