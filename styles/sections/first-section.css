@@ -1,6 +1,22 @@
+.scrollable-area {
+  position: relative;
+  z-index: 1;
+  margin-top: 100vh;
+  background-color: var(--bg-color);
+}
+.first-section .header {
+  position: sticky;
+  top: 72px;
+  z-index: 999;
+}
 .first-section {
   padding-bottom: 88px;
   padding-top: 72px;
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .iphone-left,
 .iphone-middle,
