@@ -354,24 +354,32 @@ let header = `<header class="header" id="header-sticky">
 let firstSection = document.getElementById('section-first')
 let headerElem = document.getElementById('header')
 let aboutusContainer = document.querySelector('.aboutus_container')
-console.log(firstSection.scrollHeight)
-console.log(headerElem.scrollHeight)
-console.log(headerElem.offsetTop)
 
+let scrollableArea = document.querySelector('.scrollable-area')
+
+scrollableArea.style.marginTop = `${
+  firstSection.clientHeight +
+  parseInt(getComputedStyle(firstSection).paddingTop)
+}px`
+console.log(
+  firstSection.offsetHeight +
+    parseInt(getComputedStyle(firstSection).paddingTop)
+)
 let withHeader = false
 let headerOffset = window.innerWidth < 1600 ? 60 : 72
 
 window.addEventListener('scroll', e => {
   if (
     window.scrollY >
-      firstSection.scrollHeight + headerElem.scrollHeight + headerOffset &&
+      firstSection.scrollHeight + headerElem.scrollHeight - headerOffset &&
     !withHeader
   ) {
     aboutusContainer.insertAdjacentHTML('afterbegin', header)
     withHeader = true
   }
   if (
-    window.scrollY < firstSection.scrollHeight + headerElem.scrollHeight &&
+    window.scrollY <
+      firstSection.scrollHeight + headerElem.scrollHeight - headerOffset &&
     withHeader
   ) {
     document.getElementById('header-sticky').remove()
