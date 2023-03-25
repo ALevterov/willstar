@@ -152,9 +152,11 @@
 
   overflow: hidden;
   height: 386px;
-  /* display: flex;
-  justify-content: flex-end;
-  gap: 8px; */
+
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
 }
 
 .advantages__container {

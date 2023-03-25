@@ -20,6 +20,10 @@
 
   cursor: pointer;
 }
+.main_btn:hover {
+  color: #10141b;
+  background: #fff;
+}
 .order_btn {
   font-family: 'AsgardFit';
   font-style: normal;
