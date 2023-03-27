@@ -10,11 +10,21 @@
   top: 0;
   left: 0;
   right: 0;
+  height: 100vh;
+  /* bottom: 0;s */
 }
 .first-section {
-  padding-bottom: 88px;
+  /* padding-bottom: 88px; */
   padding-top: 72px;
+
+  height: 100vh;
 }
+
+.first__section_content {
+  position: absolute;
+  bottom: 40px;
+}
+
 .iphone-left,
 .iphone-middle,
 .iphone-right,
@@ -28,8 +38,10 @@
   left: 196px;
 }
 .iphone-middle {
-  bottom: 50px;
+  bottom: 0;
   left: calc(50% - 135px);
+
+  max-height: 85%;
 }
 .iphone-right {
   right: 0;
@@ -98,7 +110,7 @@
   color: #fff;
   /* border: 2px solid #ffffff; */
 
-  margin-bottom: 58px;
+  margin-bottom: 14px;
 
   -webkit-text-stroke: 2px;
   -webkit-text-stroke-width: 2px;
@@ -113,7 +125,7 @@
 
   color: #ffffff;
 
-  margin-bottom: 110px;
+  margin-bottom: 50px;
 }
 
 .sound-controller {
@@ -231,18 +243,31 @@
 }
 @media screen and (max-width: 1850px) {
   .iphone-left {
-    width: 480px;
+    /* width: 520px; */
+    left: 150px;
   }
 
   .iphone-middle {
-    width: 480px;
+    /* width: 520px; */
   }
 
   .iphone-right {
-    height: 480px;
+    /* height: 480px; */
   }
 }
+@media screen and (max-width: 1750px) {
+  .iphone-left {
+    width: 500px;
+  }
 
+  .iphone-middle {
+    width: 500px;
+  }
+
+  .iphone-right {
+    height: 500px;
+  }
+}
 @media screen and (max-width: 1600px) {
   .iphone-left1600 {
     top: 0;
@@ -282,11 +307,11 @@
     -webkit-text-stroke: 1.5px;
     -webkit-text-stroke-width: 1.5px;
   }
-  .main-text {
+  /* .main-text {
     margin-bottom: 44px;
-  }
+  } */
   .additional-text {
-    margin-bottom: 111px;
+    /* margin-bottom: 111px; */
   }
   .running_string {
     transform: translateY(45px);

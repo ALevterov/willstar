@@ -75,6 +75,8 @@
 
 .slider_description_logo {
   align-self: flex-end;
+
+  display: none;
 }
 
 .slider__bottom_text {

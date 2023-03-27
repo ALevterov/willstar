@@ -358,27 +358,24 @@ let aboutusContainer = document.querySelector('.aboutus_container')
 
 let scrollableArea = document.querySelector('.scrollable-area')
 
-scrollableArea.style.marginTop = `${
-  firstSection.clientHeight +
-  parseInt(getComputedStyle(firstSection).paddingTop)
-}px`
-console.log(
-  firstSection.offsetHeight +
-    parseInt(getComputedStyle(firstSection).paddingTop)
-)
+// scrollableArea.style.marginTop = `100vh`
+
+console.log(headerElem.scrollHeight)
 let withHeader = false
 let headerOffset = window.innerWidth < 1600 ? 60 : 72
-
+console.log(window.innerHeight)
 window.addEventListener('scroll', e => {
   if (
-    window.scrollY > firstSection.scrollHeight + headerElem.scrollHeight &&
+    window.scrollY >
+      window.innerHeight - headerOffset - headerElem.scrollHeight &&
     !withHeader
   ) {
     aboutusContainer.insertAdjacentHTML('afterbegin', header)
     withHeader = true
   }
   if (
-    window.scrollY < firstSection.scrollHeight + headerElem.scrollHeight &&
+    window.scrollY <
+      window.innerHeight - headerOffset - headerElem.scrollHeight &&
     withHeader
   ) {
     document.getElementById('header-sticky').remove()

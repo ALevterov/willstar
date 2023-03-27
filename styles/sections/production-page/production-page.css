@@ -8,7 +8,7 @@
 .production_bg {
   position: absolute;
   top: 0;
-
+  left: calc(50% - 1028px);
   width: 2057px;
   height: 1211px;
 }
@@ -67,6 +67,7 @@
     width: 100%;
     height: 1000px;
     /* height: 1100px; */
+    left: 0;
   }
   .production-cases-section {
     margin-bottom: 150px;

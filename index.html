@@ -20,7 +20,11 @@
     <title>Willstar</title>
   </head>
   <body>
-    <section class="first-section fixed" id="section-first" id="willstars">
+		<div
+		class="body__background"
+		style="background-image: url('./assets/images/background.png')"
+	>
+    <section class="first-section fixed" id="section-first" id="willstars" style="background-image: url('./assets/images/background.png')">
 			<div class="iphone-left">      <img
         src="./assets/images/first-section/iphone-left.png"
         alt=""
@@ -41,7 +45,7 @@
 				src="./assets/images/first-section/iphone-middle1600.png"
         alt=""
       /></div>
-      <div class="container relative" style="z-index: 1">
+      <div class="container relative" style="z-index: 1; height: 100%;">
         <header class="header" id="header">
           <div class="header__logo">
             <svg
@@ -98,7 +102,7 @@
               <a class="header__menu__item" href="#aboutus">о нас</a>
               <a class="header__menu__item" href="#cases">кейсы</a>
               <a class="header__menu__item" href="#residents">резиденты</a>
-              <a class="header__menu__item" href="production.html">production</a>
+              <a class="header__menu__item" href="production.html" target="_blank">production</a>
               <a class="header__menu__item" href="#services">услуги</a>
               <a class="header__menu__item" href="#contacts">контакты</a>
             </ul>
@@ -196,7 +200,7 @@
 							</div>
           </div>
         <!-- </div> -->
-        <h1 class="main-text">Will<span class="bordered running_string">
+				<div class="first__section_content">        <h1 class="main-text">Will<span class="bordered running_string">
 					<div class="running_string_inner">
 						<div class="running_string_inner_item" id="running_string_word">star</div>
 					</div>
@@ -205,7 +209,7 @@
         <h3 class="additional-text">
           influens marketing | PR | продюсирование и production
         </h3>
-        <button class="main_btn">свяжись с нами</button>
+        <button class="main_btn">свяжись с нами</button></div>
       </div>
       <div class="sound-controller">
         <div class="sound-controller__text-container">
@@ -719,21 +723,21 @@
               <div class="slider_description_logo">
                 <img
                   class="slider_cases_description_image1"
-                  src="./assets/images/cases-section/gq.png"
+                  src=""
                   alt=""
                   data-name="кирилл колесников"
                   data-text="премия GQ номинация «лицо с экрана»"
                 />
                 <img
                   class="slider_cases_description_image2 hidden"
-                  src="./assets/images/aboutus-section/advantages/check.png"
+                  src=""
                   alt=""
                   data-name="вероника золотова"
                   data-text="премия ABC топ тиктокерша"
                 />
                 <img
                   class="slider_cases_description_image3 hidden"
-                  src="./assets/images/aboutus-section/advantages/human.png "
+                  src=""
                   alt=""
                   data-name="игорь николаев"
                   data-text="премия Муз ТВ лучший голос"
@@ -813,17 +817,9 @@
 				</h1>
 				<div class="residents__cards_container" id="resident-cards-container">
 					<div class="residents__card">
-						<a href="residents.html"><img class="residents__card_image" src="./assets/images/residents-section/zolotova.png"></img></a>
-						<a href="residents.html"><div class="residents__card_name">Вероника <br><span class="residents__card_bordered bordered">Золотова</span></div></a>
+						<a href="residents.html" target="_blank"><img class="residents__card_image" src="./assets/images/residents-section/zolotova.png"></img></a>
+						<a href="residents.html" target="_blank"><div class="residents__card_name">Вероника <br><span class="residents__card_bordered bordered">Золотова</span></div></a>
 						<div class="residents_card_social">
-							<!-- <div class="residents_card_social_item">
-								<a class="residents_social_icon" href="https://telegram.org" target="_blank">
-									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M9 0C4.0302 0 0 4.0302 0 9C0 13.9698 4.0302 18 9 18C13.9698 18 18 13.9698 18 9C18 4.0302 13.9698 0 9 0ZM13.1724 6.12C13.0374 7.5438 12.4506 10.9962 12.1518 12.591C12.0258 13.266 11.7774 13.491 11.5362 13.5144C11.0142 13.563 10.6164 13.1688 10.1106 12.8376C9.3186 12.3192 8.8704 11.9952 8.1018 11.4876C7.2126 10.9026 7.7886 10.5804 8.2962 10.0548C8.4294 9.9162 10.7316 7.8228 10.7766 7.632C10.782 7.6086 10.7874 7.5204 10.7352 7.4736C10.683 7.4268 10.6056 7.443 10.5498 7.4556C10.4706 7.4736 9.2052 8.3106 6.7536 9.9648C6.3936 10.2114 6.0696 10.332 5.778 10.3248C5.4558 10.3176 4.8384 10.143 4.3794 9.9936C3.816 9.81 3.3678 9.7128 3.4074 9.4032C3.4272 9.2412 3.6504 9.0756 4.077 8.9064C6.7014 7.7634 8.451 7.0092 9.3258 6.6456C11.826 5.6052 12.3444 5.4252 12.6828 5.4198C12.7566 5.418 12.924 5.4378 13.032 5.5242C13.122 5.598 13.149 5.697 13.1598 5.7672C13.1688 5.8374 13.1832 5.9958 13.1724 6.12Z" fill="#B8B5FF"/>
-										</svg>										
-								</a>
-								<div class="residents_social_subs">9999999</div>
-							</div> -->
 
 							<div class="residents_card_social_item">
 								<a class="residents_social_icon" href="https://instagram.com" target="_blank">
@@ -861,23 +857,6 @@
 						<img class="residents__card_image" src="./assets/images/residents-section/zolotova.png"></img>
 						<div class="residents__card_name">Вероника <br><span class="residents__card_bordered bordered">Золотова</span></div>
 						<div class="residents_card_social">
-							<!-- <div class="residents_card_social_item">
-								<a class="residents_social_icon" href="https://telegram.org" target="_blank">
-									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M9 0C4.0302 0 0 4.0302 0 9C0 13.9698 4.0302 18 9 18C13.9698 18 18 13.9698 18 9C18 4.0302 13.9698 0 9 0ZM13.1724 6.12C13.0374 7.5438 12.4506 10.9962 12.1518 12.591C12.0258 13.266 11.7774 13.491 11.5362 13.5144C11.0142 13.563 10.6164 13.1688 10.1106 12.8376C9.3186 12.3192 8.8704 11.9952 8.1018 11.4876C7.2126 10.9026 7.7886 10.5804 8.2962 10.0548C8.4294 9.9162 10.7316 7.8228 10.7766 7.632C10.782 7.6086 10.7874 7.5204 10.7352 7.4736C10.683 7.4268 10.6056 7.443 10.5498 7.4556C10.4706 7.4736 9.2052 8.3106 6.7536 9.9648C6.3936 10.2114 6.0696 10.332 5.778 10.3248C5.4558 10.3176 4.8384 10.143 4.3794 9.9936C3.816 9.81 3.3678 9.7128 3.4074 9.4032C3.4272 9.2412 3.6504 9.0756 4.077 8.9064C6.7014 7.7634 8.451 7.0092 9.3258 6.6456C11.826 5.6052 12.3444 5.4252 12.6828 5.4198C12.7566 5.418 12.924 5.4378 13.032 5.5242C13.122 5.598 13.149 5.697 13.1598 5.7672C13.1688 5.8374 13.1832 5.9958 13.1724 6.12Z" fill="#B8B5FF"/>
-										</svg>										
-								</a>
-								<div class="residents_social_subs">9999999</div>
-							</div>
-
-							<div class="residents_card_social_item">
-								<a class="residents_social_icon" href="https://instagram.com" target="_blank">
-									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M5.81026 0.0500538C4.5952 0.0918889 3.97345 0.178465 3.34364 0.393397C1.77953 0.927164 0.686487 2.11598 0.277632 3.72808C0.0214322 4.73843 0 5.14417 0 8.98389C0 12.8262 0.0240632 13.285 0.278673 14.2954C0.702876 15.9786 1.93306 17.2435 3.58805 17.6985C4.62113 17.9824 4.99463 18.0037 8.87982 17.9996C13.2034 17.995 13.8083 17.9485 14.8678 17.5392C15.537 17.2807 15.9673 17.0001 16.4715 16.4936C17.1787 15.7834 17.5882 14.9626 17.8157 13.7996C17.9839 12.9401 18.0534 9.0657 17.9544 6.07792C17.9186 4.99904 17.881 4.54927 17.7897 4.10827C17.5538 2.96809 17.1771 2.23041 16.4718 1.52706C15.7694 0.826607 14.9873 0.424924 13.8968 0.204454C12.9727 0.0175946 8.97076 -0.0587831 5.81026 0.0500538ZM14.2675 3.22146C14.6931 3.43979 14.9046 3.80819 14.871 4.27287C14.8028 5.21633 13.7114 5.62278 13.0427 4.9538C12.4839 4.39492 12.6751 3.47027 13.4103 3.17562C13.6303 3.08745 14.0501 3.10993 14.2675 3.22146ZM9.78113 4.43637C10.2235 4.50815 10.9939 4.79491 11.4049 5.04071C11.8631 5.31486 12.5255 5.96031 12.8483 6.44725C14.5885 9.07195 13.2553 12.6261 10.2081 13.4861C9.61542 13.6534 8.42169 13.6674 7.86588 13.5136C7.02411 13.2807 6.31131 12.8699 5.72546 12.2801C4.87442 11.4234 4.43903 10.4401 4.37474 9.22953C4.32042 8.20723 4.56807 7.31055 5.14361 6.44528C5.8227 5.42441 6.90209 4.69572 8.08502 4.45962C8.52748 4.37129 9.31389 4.36054 9.78113 4.43637ZM8.25544 6.10978C6.9768 6.45378 6.09583 7.53096 6.01707 8.84682C5.93183 10.2705 6.91503 11.5863 8.30993 11.9153C9.76896 12.2593 11.2792 11.4451 11.8001 10.0337C11.9811 9.54354 12.0238 8.816 11.9006 8.32594C11.6231 7.22304 10.7924 6.38354 9.70422 6.10632C9.29904 6.00308 8.64626 6.00467 8.25544 6.10978Z" fill="#B8B5FF"/>
-										</svg>										
-								</a>
-								<div class="residents_social_subs">9999999</div>
-							</div> -->
 
 							<div class="residents_card_social_item">
 								<a class="residents_social_icon" href="https://tiktok.com" target="_blank">
@@ -1224,7 +1203,7 @@
 					<div class="cases__description production">
 						Среди наших работ - музыкальные клипы для российских звезд, короткометражные сериалы с участием начинающих актеров, полнометражные фильмы с миллионными охватами, вирусные TikTok-ролики и яркая реклама. Вы можете предложить свою идею или довериться нашим профессионалам, итог будет один - крутой и работающий продукт.
 					</div>
-					<button class="main_btn production relative">перейти</button>
+					<a class="main_btn production relative" href="production.html" target="_blank">перейти</a>
 				</div>
 			</div>
 		</section>
@@ -1375,7 +1354,7 @@
 							<a href="#cases" class="footer_link">кейсы</a>
 						</div>
 						<div class="footer_left_item"><a href="#residents" class="footer_link">резиденты</a>
-							<a href="production.html" class="footer_link">production</a></div>
+							<a href="production.html" class="footer_link" target="_blank">production</a></div>
 						<div class="footer_left_item">
 							<a href="#services" class="footer_link">услуги</a>
 							<a href="#contacts" class="footer_link">контакты</a>
@@ -1413,5 +1392,6 @@
 			</div>
 		</footer>
 	</div>
+		</div>
   </body>
 </html>

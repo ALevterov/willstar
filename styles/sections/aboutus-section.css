@@ -216,7 +216,7 @@
   background: rgba(188, 125, 199, 0.66);
   filter: blur(58px);
 }
-.advantages__item_top_icon .advantages__item_bottom {
+.advantages__item_bottom {
   font-family: 'Unbounded';
   font-style: normal;
   font-weight: 300;
@@ -305,7 +305,7 @@
 .advantages__item_top_icon::before {
   animation-name: flashing;
   animation-iteration-count: infinite;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-timing-function: ease;
   animation-direction: alternate;
 
@@ -313,19 +313,19 @@
 }
 
 .advantages__item1 .advantages__item_top_icon::before {
-  animation-delay: 0.4s;
+  animation-delay: 0.6s;
 }
 .advantages__item2 .advantages__item_top_icon::before {
-  animation-delay: 1.6s;
+  animation-delay: 2.4s;
 }
 .advantages__item3 .advantages__item_top_icon::before {
   animation-delay: 0s;
 }
 .advantages__item4 .advantages__item_top_icon::before {
-  animation-delay: 0.8s;
+  animation-delay: 1.2s;
 }
 .advantages__item5 .advantages__item_top_icon::before {
-  animation-delay: 1.2s;
+  animation-delay: 1.8s;
 }
 
 @keyframes flashing {

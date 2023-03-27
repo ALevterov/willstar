@@ -1,6 +1,7 @@
 html,
 body {
-  background-color: var(--bg-color);
+  background-repeat: repeat-y;
+  /* background-color: var(--bg-color); */
 }
 section {
   /* overflow: hidden; */
