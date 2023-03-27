@@ -50,4 +50,8 @@
     margin-top: 32px;
     margin-bottom: 32px;
   }
+  .header__social__item > svg,
+  .header__logo > svg {
+    transform: scale(0.73);
+  }
 }
