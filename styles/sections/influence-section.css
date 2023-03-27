@@ -21,8 +21,16 @@
 
 .influence__slider_container {
   width: 390px;
-  /* height: 796px; */
 }
+
+.influence__slider_frame {
+  position: absolute;
+  top: 0;
+  left: -6px;
+  z-index: 99;
+  height: 100%;
+}
+
 .influence.slider_description_data {
   margin-bottom: 92px;
 }

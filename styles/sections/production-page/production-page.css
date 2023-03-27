@@ -4,20 +4,26 @@
   padding-top: 70px;
 
   margin-bottom: 186px;
+  overflow: hidden;
+}
+.first__section_content {
+  position: absolute;
+  bottom: 40px;
 }
 .production_bg {
   position: absolute;
   top: 0;
-  left: calc(50% - 1028px);
-  width: 2057px;
-  height: 1211px;
+  width: 1920px;
+  height: auto;
+
+  left: calc(50% - 960px);
 }
 .production__additional_text {
   font-family: 'AsgardFit';
   font-style: normal;
   font-weight: 100;
-  font-size: 100px;
-  line-height: 120px;
+  font-size: 80px;
+  line-height: 120%;
 
   letter-spacing: 0.36em;
 
@@ -33,7 +39,7 @@
 }
 
 .production__additional_text {
-  margin-bottom: 92px;
+  margin-bottom: 40px;
 }
 
 .hash-tags.production {
@@ -64,10 +70,10 @@
     margin-bottom: 140px;
   }
   .production_bg {
-    width: 100%;
-    height: 1000px;
+    /* width: 100%; */
+    /* height: 1000px; */
     /* height: 1100px; */
-    left: 0;
+    /* left: 0; */
   }
   .production-cases-section {
     margin-bottom: 150px;
