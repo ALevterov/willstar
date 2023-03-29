@@ -60,3 +60,35 @@
     right: 0;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .production__hightlight {
+    display: none;
+  }
+  .main__title.production {
+    font-size: 52.8088px;
+    line-height: 57px;
+
+    margin-bottom: 80px;
+  }
+  .production__bottom {
+    padding: 0;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+
+    gap: 81px;
+  }
+  .main_btn.production {
+    align-self: flex-start;
+  }
+  .production-section {
+    margin-bottom: 84px;
+    overflow: hidden;
+    padding-bottom: 0;
+  }
+  .production__background {
+    width: 200%;
+    top: 0;
+    left: -70%;
+  }
+}

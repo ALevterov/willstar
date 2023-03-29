@@ -2,6 +2,12 @@
   margin-bottom: 212px;
   z-index: 2;
 }
+.influence_mobile_hide {
+  display: block;
+}
+.influence__progress_bar_mobile {
+  display: none;
+}
 .influence__wrapper {
   display: flex;
   gap: 36px;
@@ -43,7 +49,7 @@
 /* .influence-carousel .owl-item {
   width: unset !important;
 } */
-.main__title.cases_main__title {
+.main__title.influence_main__title {
   -webkit-text-stroke: 2px;
   -webkit-text-stroke-width: 2px;
 }
@@ -51,21 +57,21 @@
   margin-bottom: 33px;
 }
 @media screen and (max-width: 1860px) {
-  .main__title.cases_main__title {
+  .main__title.influence_main__title {
     font-size: 137.187px;
     line-height: 165px;
   }
 }
 
 @media screen and (max-width: 1640px) {
-  .main__title.cases_main__title {
+  .main__title.influence_main__title {
     font-size: 117.187px;
     line-height: 136px;
   }
 }
 
 @media screen and (max-width: 1600px) {
-  .main__title.cases_main__title {
+  .main__title.influence_main__title {
     font-size: 119.878px;
     line-height: 144px;
 
@@ -99,5 +105,69 @@
   .influence__slider_container {
     height: 706px !important;
     width: 298px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main__title.influence_main__title {
+    font-size: 57px;
+    line-height: 62px;
+
+    margin-bottom: 30px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: left;
+    height: 452px;
+  }
+  .influence__wrapper {
+    flex-direction: column-reverse;
+  }
+  .influence_mobile_top {
+    display: flex;
+    gap: 15px;
+  }
+  .influence_mobile_hide,
+  .influence__progress_bar {
+    display: none;
+  }
+  .influence_carousel_item,
+  .influence__slider_container {
+    height: auto !important;
+  }
+  .influence__progress_bar_mobile {
+    display: flex;
+    width: 100%;
+  }
+  .slider_description_data.influence {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-bottom: 0;
+  }
+  .slider_description_name.influence {
+    font-size: 17px;
+    line-height: 24px;
+    max-width: 164px;
+  }
+  .slider_description_data {
+    gap: 0;
+    height: auto;
+  }
+  .influence__carousel_btn_next {
+    margin-bottom: 20px;
+  }
+  .influence__text_container {
+    display: flex;
+    align-items: flex-start;
+  }
+  .influence__carousel_btns {
+    bottom: unset;
+  }
+  .influence-section {
+    margin-bottom: 83px;
+  }
+  .influence-carousel {
+    margin-bottom: 43px;
   }
 }

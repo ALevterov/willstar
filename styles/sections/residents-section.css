@@ -1,6 +1,10 @@
 .residents-section {
   margin-bottom: 250px;
 }
+.main__title.residents_mobile,
+.residents_btn_mobile {
+  display: none;
+}
 .container.residents {
   z-index: 9;
   position: relative;
@@ -128,5 +132,37 @@
     gap: 46px;
 
     margin-bottom: 66px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .residents_fire {
+    width: 80%;
+    height: auto;
+    top: -450px;
+  }
+
+  .main__title.residents {
+    display: none;
+  }
+  .main__title.residents_mobile {
+    display: block;
+    margin-bottom: 55px;
+  }
+  .residents__cards_container {
+    display: block;
+    margin-bottom: 55px;
+  }
+  .residents__cards_container .owl-stage {
+    display: flex;
+    flex-direction: row;
+  }
+  .residents_btn_mobile {
+    display: block;
+  }
+  .residents_btn {
+    display: none;
+  }
+  .residents-section {
+    margin-bottom: 102px;
   }
 }

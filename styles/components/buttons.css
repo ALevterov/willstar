@@ -47,3 +47,11 @@
     padding: 22.5px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .main_btn {
+    font-size: 18.7115px;
+    line-height: 22px;
+    padding: 22.45px;
+  }
+}
