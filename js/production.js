@@ -57,3 +57,15 @@ nameInput.addEventListener('input', validateForm)
 
 emailInput.addEventListener('change', validateForm)
 emailInput.addEventListener('input', validateForm)
+
+const moreBtn = document.querySelector('.btn_more')
+const galeryContainer = document.querySelector('.production__galery_container')
+moreBtn.addEventListener('click', () => {
+  galeryContainer.classList.toggle('opened')
+  if (!galeryContainer.classList.contains('opened')) {
+    moreBtn.href = '#galery_item1'
+  }
+  if (galeryContainer.classList.contains('opened')) {
+    moreBtn.removeAttribute('href')
+  }
+})
