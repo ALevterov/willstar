@@ -247,4 +247,7 @@
     position: relative;
     z-index: 9;
   }
+  .slider_description_number.cases {
+    margin-right: 16px;
+  }
 }
