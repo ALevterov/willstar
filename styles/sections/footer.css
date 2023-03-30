@@ -110,3 +110,35 @@
     height: 21.35px;
   }
 }
+@media screen and (max-width: 768px) {
+  .footer__wrapper,
+  .footer__wrapper_right {
+    flex-direction: column;
+  }
+  .footer__wrapper {
+    gap: 139px;
+  }
+  .footer__wrapper_left {
+    width: 100%;
+    justify-content: space-around;
+    gap: 0;
+  }
+  .footer__wrapper_right {
+    gap: 37px;
+  }
+  .footer__center {
+    left: calc(50% - 66.5px);
+    top: calc(50% - 28px);
+  }
+  .footer__center > svg {
+    width: 133px;
+    height: 25px;
+  }
+  .footer_right_item.social {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .footer_bottom_logo {
+    margin-bottom: 60px;
+  }
+}
