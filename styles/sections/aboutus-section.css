@@ -704,4 +704,7 @@
   .aboutus-section {
     margin-bottom: 80px;
   }
+  .aboutus__mobile_container {
+    display: block;
+  }
 }
