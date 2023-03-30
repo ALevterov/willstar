@@ -1,4 +1,5 @@
-.cases__slider_container_mobile {
+.cases__slider_container_mobile,
+.cases__progress_bar_mobile {
   display: none;
 }
 .cases-section {

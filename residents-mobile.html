@@ -10,10 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Roboto:wght@300&family=Unbounded:wght@300;700&display=swap"
       rel="stylesheet"
     />
-    <script src="https://mapgl.2gis.com/api/js/v1"></script>
-    <script src="./js/map.js" defer></script>
-    <script src="./js/resident.js" defer></script>
-
     <link rel="stylesheet" href="./styles/residents.css" />
     <title>Willstar</title>
   </head>
@@ -22,24 +18,8 @@
       class="body__background relative"
       style="background-image: url('./assets/images/background.png')"
     >
-      <img
-        class="section__residents_bg"
-        src="./assets/images/residents-page/background.png"
-        alt=""
-      />
       <section class="section_residents_page relative">
-        >
-        <img
-          class="section__residents_fire"
-          src="./assets/images/residents-section/fire.png"
-          alt=""
-        />
-        <img
-          class="section__residents_highlight"
-          src="./assets/images/residents-page/highlight.png"
-          alt=""
-        />
-        <div class="container relative" style="z-index: 1">
+        <div class="container relative">
           <header class="header">
             <div class="header__logo">
               <svg
@@ -275,181 +255,93 @@
               <span class="residents_getback_label">вернуться</span>
             </a>
           </div>
-
-          <div class="resident__container">
-            <div class="resident__container_photo">
-              <img src="./assets/images/residents-page/veronica.png" alt="" />
+          <h1 class="main__title residents_mobile" id="residents-title">
+            Р<span class="bordered">ЕЗИ<br />ДЕНТЫ</span>
+          </h1>
+          <div class="residents_page_card_container">
+            <div class="residents_page_card">
+              <a href="residents.html" target="_blank">
+                <img
+                  src="./assets/images/residents-section/zolotova.png"
+                  alt=""
+                  class="residents_page_card_image"
+              /></a>
+              <a href="residents.html" target="_blank">
+                <div class="residents_page__card_name">
+                  Вероника <br /><span
+                    class="residents_page__card_bordered bordered"
+                    >Золотова</span
+                  >
+                </div>
+              </a>
             </div>
-            <div class="resident__container_right">
-              <div class="resident__container_header">
-                <h2 class="resident__title">
-                  Вероника <span class="bordered">Золотова</span>
-                </h2>
-                <div class="resident__age">25 лет</div>
-              </div>
 
-              <div class="resident__container_text">
-                Lorem ipsum dolor sit amet consectetur. Condimentum adipiscing
-                habitant netus placerat et neque ut aliquet. Ac aliquet vel
-                dignissim porttitor. Suspendisse et viverra aliquam diam nunc
-                diam senectus vitae. Egestas interdum pharetra duis eu lectus
-                nibh semper adipiscing aliquam. Ut mollis maecenas viverra
-                faucibus erat. Phasellus sodales aliquam imperdiet sit vitae
-                proin. Suspendisse felis dolor elit natoque. A quis magna risus
-                tristique. Velit tortor nec nulla sed sollicitudin ac blandit
-                nulla ornare. Dolor viverra lacinia mi diam sed sagittis
-                aliquam. Et id at volutpat faucibus aliquet odio. Velit volutpat
-                nibh aliquam viverra nam.
-              </div>
-              <div class="resident__container_social">
-                <div class="resident__container_social_item">
-                  <div class="resident__container_social_item_icon">
-                    <svg
-                      width="43"
-                      height="43"
-                      viewBox="0 0 43 43"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M21.5 0C9.6277 0 0 9.6277 0 21.5C0 33.3723 9.6277 43 21.5 43C33.3723 43 43 33.3723 43 21.5C43 9.6277 33.3723 0 21.5 0ZM31.4674 14.62C31.1449 18.0213 29.7431 26.2687 29.0293 30.0785C28.7283 31.691 28.1349 32.2285 27.5587 32.2844C26.3117 32.4005 25.3614 31.4588 24.1531 30.6676C22.2611 29.4292 21.1904 28.6552 19.3543 27.4426C17.2301 26.0451 18.6061 25.2754 19.8187 24.0198C20.1369 23.6887 25.6366 18.6878 25.7441 18.232C25.757 18.1761 25.7699 17.9654 25.6452 17.8536C25.5205 17.7418 25.3356 17.7805 25.2023 17.8106C25.0131 17.8536 21.9902 19.8531 16.1336 23.8048C15.2736 24.3939 14.4996 24.682 13.803 24.6648C13.0333 24.6476 11.5584 24.2305 10.4619 23.8736C9.116 23.435 8.0453 23.2028 8.1399 22.4632C8.1872 22.0762 8.7204 21.6806 9.7395 21.2764C16.0089 18.5459 20.1885 16.7442 22.2783 15.8756C28.251 13.3902 29.4894 12.9602 30.2978 12.9473C30.4741 12.943 30.874 12.9903 31.132 13.1967C31.347 13.373 31.4115 13.6095 31.4373 13.7772C31.4588 13.9449 31.4932 14.3233 31.4674 14.62Z"
-                        fill="#B8B5FF"
-                      />
-                    </svg>
-                  </div>
-                  <div class="resident__container_social_item_subs">
-                    9999999
-                  </div>
+            <div class="residents_page_card">
+              <a href="residents.html" target="_blank">
+                <img
+                  src="./assets/images/residents-section/zolotova.png"
+                  alt=""
+                  class="residents_page_card_image"
+              /></a>
+              <a href="residents.html" target="_blank">
+                <div class="residents_page__card_name">
+                  Вероника <br /><span
+                    class="residents_page__card_bordered bordered"
+                    >Золотова</span
+                  >
                 </div>
-                <div class="resident__container_social_item">
-                  <div class="resident__container_social_item_icon">
-                    <svg
-                      width="43"
-                      height="43"
-                      viewBox="0 0 43 43"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M13.8801 0.119573C10.9774 0.219512 9.49212 0.426333 7.98758 0.939783C4.25109 2.21489 1.63994 5.05484 0.663231 8.90598C0.0511991 11.3196 0 12.2889 0 21.4615C0 30.6405 0.0574844 31.7364 0.665719 34.15C1.67909 38.171 4.61787 41.1929 8.57146 42.2797C11.0394 42.9579 11.9316 43.0087 21.2129 42.999C31.5414 42.9882 32.9866 42.8771 35.5176 41.8992C37.1161 41.2816 38.1441 40.6114 39.3486 39.4015C41.0379 37.7047 42.0162 35.7441 42.5598 32.9657C42.9615 30.9124 43.1277 21.6569 42.8911 14.5195C42.8056 11.9421 42.7157 10.8677 42.4977 9.81421C41.934 7.09044 41.0343 5.3282 39.3493 3.64797C37.6713 1.97467 35.8029 1.0151 33.1978 0.488418C30.9904 0.0420316 21.4301 -0.140426 13.8801 0.119573ZM34.0834 7.6957C35.1003 8.21727 35.6055 9.09734 35.5252 10.2074C35.3622 12.4612 32.7551 13.4322 31.1576 11.8341C29.8227 10.499 30.2795 8.2901 32.0358 7.5862C32.5613 7.37558 33.5641 7.42929 34.0834 7.6957ZM23.366 10.598C24.4229 10.7695 26.2633 11.4545 27.245 12.0417C28.3397 12.6966 29.9221 14.2385 30.6933 15.4018C34.8502 21.6719 31.6654 30.1624 24.3861 32.2169C22.9702 32.6165 20.1185 32.6499 18.7907 32.2825C16.7798 31.7261 15.077 30.7447 13.6775 29.3359C11.6444 27.2892 10.6044 24.9401 10.4508 22.0483C10.321 19.6062 10.9126 17.4641 12.2875 15.3971C13.9098 12.9583 16.4883 11.2176 19.3142 10.6535C20.3712 10.4425 22.2499 10.4169 23.366 10.598ZM19.7213 14.5956C16.6668 15.4174 14.5623 17.9906 14.3741 21.1341C14.1705 24.5351 16.5192 27.6785 19.8515 28.4642C23.337 29.286 26.9447 27.3412 28.1892 23.9693C28.6215 22.7985 28.7236 21.0605 28.4291 19.8897C27.7664 17.255 25.7819 15.2496 23.1823 14.5873C22.2144 14.3407 20.655 14.3445 19.7213 14.5956Z"
-                        fill="#B8B5FF"
-                      />
-                    </svg>
-                  </div>
-                  <div class="resident__container_social_item_subs">
-                    9999999
-                  </div>
-                </div>
-                <div class="resident__container_social_item">
-                  <div class="resident__container_social_item_icon">
-                    <svg
-                      width="43"
-                      height="43"
-                      viewBox="0 0 43 43"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M16.5805 0.0388939C10.8835 0.306847 7.19155 0.657227 6.05889 1.03752C3.37799 1.9375 1.36278 4.19934 0.822619 6.91458C0.65626 7.75087 0.390002 10.5572 0.188859 13.5953C0.0100654 16.2953 -0.0625275 23.8506 0.0628297 26.7054C0.253722 31.0516 0.627609 35.3844 0.905462 36.4708C1.63131 39.309 4.04544 41.5966 6.9174 42.1676C8.08527 42.3998 12.3414 42.7543 15.9503 42.9199C18.2913 43.0274 24.7271 43.0265 27.0409 42.9185C31.2554 42.7217 35.4601 42.3447 36.5103 42.0697C39.1927 41.367 41.4007 39.1498 42.0858 36.4708C42.3544 35.4205 42.7344 31.0778 42.9185 26.9552C43.0272 24.5224 43.0272 18.4648 42.9185 16.032C42.7344 11.9094 42.3544 7.56669 42.0858 6.51639C41.3988 3.82989 39.1584 1.58939 36.472 0.902325C35.442 0.638826 31.0869 0.252399 27.0829 0.0691425C25.4661 -0.00488266 17.9699 -0.0263928 16.5805 0.0388939ZM26.7903 9.24709C26.792 10.6256 26.9237 11.3857 27.2889 12.1249C27.7921 13.1434 28.8012 14.0095 29.8976 14.3641C30.3356 14.5056 30.7322 14.549 31.9014 14.583L33.3591 14.6252L33.3087 14.877C33.2811 15.0155 33.2584 15.937 33.2584 16.9248V18.7208H32.2048C30.1533 18.7208 28.7581 18.4487 27.4583 17.7952L26.7889 17.4586L26.7885 22.2279C26.7882 27.3906 26.7599 27.8151 26.3309 29.0978C24.6657 34.0759 18.7944 36.3844 14.1859 33.8729C12.1519 32.7644 10.7116 30.9705 10.0148 28.6776C9.79986 27.9706 9.7849 27.8204 9.7849 26.367C9.7849 24.9173 9.80019 24.7628 10.0114 24.0745C10.4885 22.5201 11.145 21.4044 12.2016 20.3526C13.3475 19.212 14.6131 18.4859 16.1604 18.081C16.885 17.8915 17.229 17.8553 18.66 17.8181L20.3194 17.7751V19.8349V21.8946L18.87 21.9319C17.1879 21.9752 16.7072 22.0977 15.7656 22.7233C14.5481 23.5322 13.8499 24.8603 13.8499 26.367C13.8499 27.5854 14.2716 28.6104 15.1236 29.4624C16.5011 30.84 18.4137 31.1613 20.2159 30.3179C20.9064 29.9947 21.8634 29.0501 22.19 28.3692C22.692 27.3226 22.6719 27.7765 22.6719 17.4848V8.04975H24.7304H26.7889L26.7903 9.24709Z"
-                        fill="#B8B5FF"
-                      />
-                    </svg>
-                  </div>
-                  <div class="resident__container_social_item_subs">
-                    9999999
-                  </div>
-                </div>
-                <div class="resident__container_social_item">
-                  <div class="resident__container_social_item_icon">
-                    <svg
-                      width="44"
-                      height="43"
-                      viewBox="0 0 44 43"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0.728417 25.2605V17.6946C0.756481 17.3487 0.793524 17.0028 0.811485 16.6558C0.861999 15.6911 0.88445 14.7241 0.954047 13.7617C1.091 11.8784 1.28295 9.9984 1.39745 8.11282C1.60063 4.75381 3.80191 1.81033 7.07073 0.997249C8.87128 0.549157 10.7717 0.468298 12.6351 0.312196C14.5446 0.150479 16.4618 0.0348058 18.378 0.0179602C21.639 -0.0123618 24.9033 -0.0146079 28.162 0.0943268C30.6765 0.177432 33.1854 0.434607 35.6953 0.640123C38.2951 0.8535 40.3527 2.03044 41.8098 4.20689C42.6472 5.45908 43.0064 6.86512 43.1041 8.35989C43.2758 10.971 43.5699 13.5764 43.6474 16.1897C43.7439 19.4914 43.7619 22.801 43.6519 26.1016C43.5475 29.2169 43.3263 32.3368 42.9839 35.4352C42.6416 38.5382 40.8534 40.6484 37.9707 41.8208C36.8527 42.2756 35.6583 42.3408 34.474 42.4239C32.0044 42.5957 29.5326 42.7518 27.0619 42.9169C26.7723 42.936 26.4838 42.9719 26.1942 43H18.378C18.0446 42.9719 17.7123 42.9349 17.379 42.9169C16.4282 42.8675 15.4763 42.845 14.5266 42.7765C12.6284 42.6384 10.7324 42.4879 8.83648 42.3194C5.79553 42.0488 3.55047 40.5709 2.16751 37.8318C1.64216 36.7907 1.45919 35.6632 1.37612 34.5098C1.22682 32.4165 1.05171 30.3243 0.899043 28.2298C0.8272 27.2415 0.783422 26.251 0.727295 25.2616L0.728417 25.2605ZM22.0835 31.4102C25.0515 31.2283 27.8455 31.0655 30.6372 30.8802C31.6419 30.8139 32.5882 30.523 33.4334 29.9582C34.2237 29.4303 34.895 28.7666 35.0678 27.8087C35.3047 26.4902 35.4832 25.156 35.5966 23.8208C35.8132 21.2715 35.6527 18.73 35.2699 16.2021C35.1329 15.2969 34.9691 14.4131 34.2922 13.7123C33.4402 12.8318 32.4029 12.2591 31.2063 12.1625C28.4314 11.939 25.6498 11.6942 22.8693 11.6852C19.8788 11.6762 16.8862 11.9143 13.8957 12.0738C12.7272 12.1355 11.6484 12.5095 10.7178 13.244C10.087 13.7415 9.5549 14.3434 9.42019 15.1464C9.19457 16.4817 9.00486 17.8282 8.89148 19.177C8.6782 21.6982 8.83648 24.2116 9.21702 26.7115C9.34948 27.5852 9.48081 28.4544 10.1173 29.1484C10.9873 30.0985 12.0671 30.6915 13.3277 30.7982C16.2968 31.0509 19.2727 31.2182 22.0835 31.4091V31.4102Z"
-                        fill="#B8B5FF"
-                      />
-                      <path
-                        d="M19.0515 16.3222C21.8579 18.0461 24.6126 19.7396 27.4391 21.477C24.6272 23.2042 21.8657 24.9011 19.0515 26.6283V16.3222Z"
-                        fill="#B8B5FF"
-                      />
-                    </svg>
-                  </div>
-                  <div class="resident__container_social_item_subs">
-                    9999999
-                  </div>
-                </div>
-              </div>
-
-              <div class="resident__caption">
-                *продукт компании Meta, признанной экстремистской организацией и
-                деятельность которой запрещена в Российской Федерации
-              </div>
+              </a>
             </div>
-          </div>
-        </div>
-      </section>
 
-      <section class="contact-section relative" id="contacts">
-        <div class="container contact">
-          <div class="contact__wrapper">
-            <div class="contact__left">
-              <h1 class="main__title contact">
-                c<span class="bordered">ontact</span>
-              </h1>
-              <div class="contact__map_wrapper">
-                <div class="contact__map_wrapper_text">Офис - Киевская 19</div>
-                <div class="contact__map_wrapper_map" id="map"></div>
-              </div>
+            <div class="residents_page_card">
+              <a href="residents.html" target="_blank">
+                <img
+                  src="./assets/images/residents-section/zolotova.png"
+                  alt=""
+                  class="residents_page_card_image"
+              /></a>
+              <a href="residents.html" target="_blank">
+                <div class="residents_page__card_name">
+                  Вероника <br /><span
+                    class="residents_page__card_bordered bordered"
+                    >Золотова</span
+                  >
+                </div>
+              </a>
             </div>
-            <div class="contact__right">
-              <div class="contact__form">
-                <form action="">
-                  <div class="form__wrapper">
-                    <div class="input__wrapper">
-                      <label for="name">Представьтесь, пожалуйста*</label>
-                      <input type="text" name="name" id="name" />
-                    </div>
-                    <div class="input__container">
-                      <div class="input__wrapper">
-                        <label for="tel">Номер телефона</label>
-                        <input type="tel" name="tel" id="tel" />
-                      </div>
-                      <div class="input__wrapper">
-                        <label for="email">E-mail*</label>
-                        <input type="text" name="email" id="email" />
-                      </div>
-                    </div>
-                    <div class="input__wrapper">
-                      <label for="message">Текст сообщения</label>
-                      <input type="text" name="message" id="message" />
-                    </div>
 
-                    <div class="form__footer">
-                      <div class="form__footer_text">
-                        Нажимая кнопку “Отправить”, я подтверждаю согласие на
-                        обработку моих персональных данных
-                      </div>
-                      <button
-                        class="form__footer_btn main_btn"
-                        type="submit"
-                        id="submit"
-                      >
-                        отправить
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
+            <div class="residents_page_card">
+              <a href="residents.html" target="_blank">
+                <img
+                  src="./assets/images/residents-section/zolotova.png"
+                  alt=""
+                  class="residents_page_card_image"
+              /></a>
+              <a href="residents.html" target="_blank">
+                <div class="residents_page__card_name">
+                  Вероника <br /><span
+                    class="residents_page__card_bordered bordered"
+                    >Золотова</span
+                  >
+                </div>
+              </a>
+            </div>
+
+            <div class="residents_page_card">
+              <a href="residents.html" target="_blank">
+                <img
+                  src="./assets/images/residents-section/zolotova.png"
+                  alt=""
+                  class="residents_page_card_image"
+              /></a>
+              <a href="residents.html" target="_blank">
+                <div class="residents_page__card_name">
+                  Вероника <br /><span
+                    class="residents_page__card_bordered bordered"
+                    >Золотова</span
+                  >
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -514,14 +406,15 @@
               </div>
               <div class="footer_left_item">
                 <a href="#residents" class="footer_link">резиденты</a>
-                <a href="production.html" class="footer_link">production</a>
+                <a href="production.html" class="footer_link" target="_blank"
+                  >production</a
+                >
               </div>
               <div class="footer_left_item">
                 <a href="#services" class="footer_link">услуги</a>
                 <a href="#contacts" class="footer_link">контакты</a>
               </div>
             </div>
-
             <div class="footer__wrapper_right">
               <div class="footer_right_item links">
                 <a class="footer_right_email footer_link">Mail@mail.ru</a>
@@ -530,8 +423,8 @@
                 >
               </div>
               <div class="footer_right_item social">
-                <a href="https://whatsapp.com" target="_blank"
-                  ><svg
+                <a href="https://whatsapp.com" target="_blank">
+                  <svg
                     width="26"
                     height="26"
                     viewBox="0 0 26 26"
@@ -546,8 +439,8 @@
                     />
                   </svg>
                 </a>
-                <a href="https://telegram.org" target="_blank"
-                  ><svg
+                <a href="https://telegram.org" target="_blank">
+                  <svg
                     width="28"
                     height="28"
                     viewBox="0 0 28 28"
@@ -562,8 +455,8 @@
                     />
                   </svg>
                 </a>
-                <a href="https://instagram.com" target="_blank"
-                  ><svg
+                <a href="https://instagram.com" target="_blank">
+                  <svg
                     width="27"
                     height="28"
                     viewBox="0 0 27 28"
@@ -578,8 +471,8 @@
                     />
                   </svg>
                 </a>
-                <a href="https://facebook.com" target="_blank"
-                  ><svg
+                <a href="https://facebook.com" target="_blank">
+                  <svg
                     width="28"
                     height="28"
                     viewBox="0 0 28 28"

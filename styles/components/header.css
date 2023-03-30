@@ -7,7 +7,9 @@
 
   align-items: center;
 }
-
+.header__mobile {
+  display: none;
+}
 .header__menu__list {
   display: flex;
   gap: 82px;
@@ -51,7 +53,22 @@
     margin-bottom: 32px;
   }
   .header__social__item > svg,
-  .header__logo > svg {
+  .header .header__logo > svg {
     transform: scale(0.73);
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    display: none;
+  }
+  .header__mobile {
+    display: flex;
+  }
+  .header__mobile > .header__logo > svg {
+    width: 98px;
+    height: 18px;
+  }
+  .header_burger {
+    cursor: pointer;
   }
 }

@@ -1,5 +1,8 @@
 .first__section_mobile_bg,
-.first__section_content_mobile {
+.first__section_content_mobile,
+.advantages__controls,
+.header__mobile,
+.aboutus__mobile_container {
   display: none;
 }
 .scrollable-area {
